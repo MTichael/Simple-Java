@@ -1,7 +1,8 @@
 //Challenge taken from CoderByte, completed in 42 minutes 9/25/2018
 //Points gained: 0 
 //   Reason: Forgot to delete error-checking messages, which muddied the output
-//   On Resubmit: Full credit, passed all cases. No changes other than removal of the error messages.
+//   On Resubmit: Full credit, passed all cases. Deleted a check for input less than 1000
+//                which prematurely ended the recursive loop
 
 //Michael Tinning
 
@@ -70,7 +71,7 @@ class Main {
         num = num / 100;
     }
     
-    if(num == 6174 || num < 1000) {
+    if(num == 6174) {
         return counter;
     }
     
